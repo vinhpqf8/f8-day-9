@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+input,
+button,
+textarea,
+select {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  color: #9ca3af;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+.table-wrapper {
+  width: 1200px;
+  margin: 60px auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border: 1px solid #ebebed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.search-form {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 280px;
+  height: 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: white;
+  padding: 0 12px;
+  color: #9ca3af;
+}
+
+.search-icon {
+  font-size: 16px;
+  margin-right: 8px;
+  color: #9ca3af;
+}
+.search-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 8px;
+}
+.input-search {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-size: 14px;
+  color: #333;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.table thead tr {
+  background: #ebebed;
+  border-top: none;
+}
+
+.table__header {
+  padding: 0 10px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 40px;
+  border-right: 2px solid #fff;
+}
+
+.table__header:nth-child(even) {
+  text-align: center;
+}
+
+.table__row:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.table__cell {
+  padding: 0 10px;
+  border: 1px solid #ebebed;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table__cell--info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.table__avatar {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.table__status-icon {
+  position: absolute;
+  background: #3077dd;
+  width: 14px;
+  height: 16px;
+  font-size: 1rem;
+  color: #fff;
+  bottom: 6px;
+  left: 28px;
+  clip-path: polygon(
+    51% 0,
+    100% 15%,
+    100% 50%,
+    84% 79%,
+    51% 100%,
+    18% 79%,
+    0 50%,
+    0 14%
+  );
+}
+
+.table__status-icon::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 3px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  rotate: -45deg;
+  bottom: 6px;
+  left: 3px;
+}
+
+.button {
+  line-height: 24px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button--active {
+  min-width: 50px;
+  background: #daeae0;
+  color: #33995a;
+}
+
+.button--not-found {
+  min-width: 80px;
+  background: #f5ecd6;
+  color: #f5c239;
+}
+
+/* css footer */
+.table-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-btn {
+  display: flex;
+  gap: 30px;
+}
